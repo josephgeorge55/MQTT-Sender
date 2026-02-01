@@ -5,8 +5,8 @@ import { mqttMessageSchema } from "@shared/schema";
 
 // MQTT Configuration
 const MQTT_BROKER = "wss://yce1c101.ala.eu-central-1.emqxsl.com:8084/mqtt";
-const MQTT_USERNAME = process.env.MQTT_USERNAME;
-const MQTT_PASSWORD = process.env.MQTT_PASSWORD;
+const MQTT_USERNAME = "bladehalo88888";
+const MQTT_PASSWORD = "Blade2026!!88!!";
 
 let mqttClient: mqtt.MqttClient | null = null;
 let connectionStatus: 'disconnected' | 'connecting' | 'connected' | 'error' = 'disconnected';
