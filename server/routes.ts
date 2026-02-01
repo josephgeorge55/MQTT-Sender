@@ -133,7 +133,7 @@ export async function registerRoutes(
         });
       }
 
-      mqttClient.publish(topic, message, { qos: 0 }, (error) => {
+      mqttClient.publish(topic, message, { qos: 0, retain: true }, (error) => {
         if (error) {
           return res.status(500).json({ 
             success: false, 
